@@ -6,3 +6,6 @@ CREATE TABLE workers (
     salary numeric NOT NULL CHECK (salary > 0),
     UNIQUE (birthday, name)
 );
+
+ALTER TABLE workers 
+ADD COLUMN is_male BOOLEAN NOT NULL ;
