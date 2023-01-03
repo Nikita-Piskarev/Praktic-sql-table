@@ -17,3 +17,6 @@ ALTER TABLE workers
 ADD COLUMN department varchar(150) NOT NULL;
 --
 ALTER TABLE workers DROP COLUMN department;
+--
+ALTER TABLE workers
+ALTER COLUMN salary SET DEFAULT (150);
