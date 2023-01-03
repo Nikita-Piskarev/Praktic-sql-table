@@ -17,3 +17,18 @@ VALUES(
         300,
         'Nicita@gmail.com'
     );
+--
+INSERT INTO workers (
+name,
+is_male,
+birthday,
+salary,
+email
+)
+VALUES(
+        'Cветлана',
+        false,
+        '05-30-1994',
+        1200,
+        'Svetlana@gmail.com'
+    );
