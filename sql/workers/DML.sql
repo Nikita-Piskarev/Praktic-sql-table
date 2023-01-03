@@ -95,5 +95,16 @@ WHERE id >= 2
 --
 -- Поменяйте Васю на Женю и поменяйте почту.
 UPDATE workers
-SET name = 'Женя', email = 'Janya@gmail.com'
+SET name = 'Женя',
+    email = 'Janya@gmail.com'
 WHERE name = 'Костя';
+--
+-- Задачи на DELETE
+--
+-- Удалите работника с id=2.
+DELETE FROM workers
+WHERE id = 2;
+--
+
+-- Удалите всех Николаев.
+-- Удалите всех работников, у которых зарплата меньше 200$.
