@@ -94,3 +94,6 @@ WHERE id >= 2
     AND is_male = false;
 --
 -- Поменяйте Васю на Женю и поменяйте почту.
+UPDATE workers
+SET name = 'Женя', email = 'Janya@gmail.com'
+WHERE name = 'Костя';
