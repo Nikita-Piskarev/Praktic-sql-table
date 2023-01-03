@@ -44,34 +44,42 @@ VALUES(
     );
 --
 -- (Так же добавте еще несколько пользователей чтобы раздуть табличку и иметь возможность делать задачки из следующего блока)
-INSERT INTO workers (name, is_male, birthday, salary, email)
+INSERT INTO workers (name, is_male, birthday, email)
 VALUES(
         'Нина',
         false,
         '12-31-1985',
-        180,
         'Nina@gmail.com'
     ),
     (
-        'Костя',
+        'Вася',
         true,
         '07-03-2000',
-        1050,
-        'Kosta@gmail.com'
+        'Vasa@gmail.com'
     ),
     (
         'Света',
         false,
         '03-10-1998',
-        350,
         'Cveta@gmail.com'
     ),
     (
         'Настя',
         false,
         '01-20-1996',
-        1050,
         'Nasta@gmail.com'
+    ),
+    (
+        'Николай',
+        true,
+        '08-04-1997',
+        'Nicolai@gmail.com'
+    ),
+    (
+        'Николай',
+        true,
+        '01-02-1998',
+        'NicolaiPetrov@gmail.com'
     );
 --
 --     Задачи на UPDATE
@@ -97,7 +105,7 @@ WHERE id >= 2
 UPDATE workers
 SET name = 'Женя',
     email = 'Janya@gmail.com'
-WHERE name = 'Костя';
+WHERE name = 'Вася';
 --
 -- Задачи на DELETE
 --
@@ -107,8 +115,8 @@ WHERE id = 2;
 --
 -- Удалите всех Николаев.
 DELETE FROM workers
-WHERE name = 'Настя'
+WHERE name = 'Николай';
 --
 -- Удалите всех работников, у которых зарплата меньше 200$.
 DELETE FROM workers
-WHERE salary < 500;
+WHERE salary < 200;
