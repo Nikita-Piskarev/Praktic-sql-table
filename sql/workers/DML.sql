@@ -105,6 +105,7 @@ WHERE name = 'Костя';
 DELETE FROM workers
 WHERE id = 2;
 --
-
 -- Удалите всех Николаев.
+DELETE FROM workers
+WHERE name = 'Настя'
 -- Удалите всех работников, у которых зарплата меньше 200$.
