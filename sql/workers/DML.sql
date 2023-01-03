@@ -1,8 +1,6 @@
 -- Фаил для заполнеиня ттаблицы данными
+--
 -- Добавьте нового работника Никиту, 90го года, зарплата 300$.
--- Добавьте нового работника Светлану с зарплатой 1200$.
--- Добавьте двух новых работников одним запросом: Ярослава с зарплатой 1200$ и годом 80го, Петра с зарплатой 1000$ и 93 года.
--- (Так же добавте еще несколько пользователей чтобы раздуть табличку и иметь возможность делать задачки из следующего блока)
 INSERT INTO workers (
         name,
         is_male,
@@ -18,13 +16,8 @@ VALUES(
         'Nicita@gmail.com'
     );
 --
-INSERT INTO workers (
-name,
-is_male,
-birthday,
-salary,
-email
-)
+-- Добавьте нового работника Светлану с зарплатой 1200$.
+INSERT INTO workers (name, is_male, birthday, salary, email)
 VALUES(
         'Cветлана',
         false,
@@ -33,13 +26,8 @@ VALUES(
         'Svetlana@gmail.com'
     );
 --
-INSERT INTO workers (
-name,
-is_male,
-birthday,
-salary,
-email
-)
+-- Добавьте двух новых работников одним запросом: Ярослава с зарплатой 1200$ и годом 80го, Петра с зарплатой 1000$ и 93 года.
+INSERT INTO workers (name, is_male, birthday, salary, email)
 VALUES(
         'Ярослав',
         true,
@@ -47,7 +35,7 @@ VALUES(
         1200,
         'Yaroslav@gmail.com'
     ),
-(
+    (
         'Петя',
         true,
         '05-30-1993',
@@ -55,13 +43,8 @@ VALUES(
         'Petro@gmail.com'
     );
 --
-    INSERT INTO workers (
-name,
-is_male,
-birthday,
-salary,
-email
-)
+-- (Так же добавте еще несколько пользователей чтобы раздуть табличку и иметь возможность делать задачки из следующего блока)
+INSERT INTO workers (name, is_male, birthday, salary, email)
 VALUES(
         'Нина',
         false,
@@ -69,7 +52,7 @@ VALUES(
         180,
         'Nina@gmail.com'
     ),
-(
+    (
         'Костя',
         true,
         '07-03-2000',
@@ -83,7 +66,7 @@ VALUES(
         350,
         'Cveta@gmail.com'
     ),
-(
+    (
         'Настя',
         false,
         '01-20-1996',
