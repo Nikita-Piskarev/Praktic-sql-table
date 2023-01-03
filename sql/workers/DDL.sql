@@ -14,4 +14,6 @@ ALTER TABLE workers
 ADD COLUMN email varchar(150) UNIQUE NOT NULL CHECK (email != '');
 --
 ALTER TABLE workers 
-ADD COLUMN department varchar(150) NOT NULL ;
+ADD COLUMN department varchar(150) NOT NULL;
+--
+ALTER TABLE workers DROP COLUMN department;
