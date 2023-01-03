@@ -54,3 +54,39 @@ VALUES(
         1000,
         'Petro@gmail.com'
     );
+--
+    INSERT INTO workers (
+name,
+is_male,
+birthday,
+salary,
+email
+)
+VALUES(
+        'Нина',
+        false,
+        '12-31-1985',
+        180,
+        'Nina@gmail.com'
+    ),
+(
+        'Костя',
+        true,
+        '07-03-2000',
+        1050,
+        'Kosta@gmail.com'
+    ),
+    (
+        'Света',
+        false,
+        '03-10-1998',
+        350,
+        'Cveta@gmail.com'
+    ),
+(
+        'Настя',
+        false,
+        '01-20-1996',
+        1050,
+        'Nasta@gmail.com'
+    );
